@@ -18,8 +18,8 @@
  ## Setup
 
 
- git clone[https://github.com/AllyzaMagas/cs313-quizspin-api]
- cd [cs313-Quiz spin- Api]
+ git clone[https://github.com/AllyzaMagas/quiz-spin-]
+ cd [Quiz-spin]
  npm install
  
 Copy .env.example to .env, then put your own PostgreSQL password in DB_PASSWORD.
