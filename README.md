@@ -44,6 +44,7 @@ Copy .env.example to .env, then put your own PostgreSQL password in DB_PASSWORD.
  | HUB_APL_KEY | dev-hub-key | Key the Library Game Hub sends |
  ## What "completed" means in my game
  A player completes the game when they have answered all available questions in the session, even if some answers were incorrect or timed out.
+
  ## Tables
  - hosts
  - question_sets
@@ -51,14 +52,18 @@ Copy .env.example to .env, then put your own PostgreSQL password in DB_PASSWORD.
  - game_sessions
  - players
  - answers
+
  ## Endpoints (Hub Contract v1.2)
+
  Base URL: http://localhost:3001/api/v1
  | Method | Path | Purpose | Success | Errors |
  |---|---|---|---|---|
  | GET | /health | Check API and database | 200 | 503 |
  | GET | /game-info | Game details | 200 | 500 |
  | GET | /results | Finished games, players, top 3. Needs X-Hub-Key header. | 200 | 401 |
+
  ## Database scripts
+
  | Command | What it does |
  |---|---|
  | npm run db:create | Create database |
